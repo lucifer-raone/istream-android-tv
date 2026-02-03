@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         webView.settings.domStorageEnabled = true
         webView.settings.mediaPlaybackRequiresUserGesture = false
         webView.settings.userAgentString =
-            "Mozilla/5.0 (Linux; Android TV) AppleWebKit/537.36 Chrome/120 Safari/537.36"
+            "Mozilla/5.0 (Linux; Android TV) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36"
 
         webView.webViewClient = WebViewClient()
         webView.webChromeClient = WebChromeClient()
@@ -27,6 +27,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        // Disable back button for TV
+        // Disabled for TV kiosk behavior
     }
 }
